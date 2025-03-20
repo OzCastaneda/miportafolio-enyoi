@@ -1,0 +1,25 @@
+:root {
+    --color-primary: #003af8;
+    --color-secondary: #ffffff;
+    --color-tertiary: #333333;
+    --color-forth: #f8f8f8;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'playfair', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--color-tertiary);
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+

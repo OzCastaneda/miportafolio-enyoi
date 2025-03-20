@@ -1,0 +1,274 @@
+/* Definición de variables */
+:root {
+    --color-primary: #003af8;
+    --color-secondary: #ffffff;
+    --color-tertiary: #333333;
+    --color-forth: #f8f8f8;
+  }
+  
+  /* Estilos generales */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Playfair, sans-serif;
+  }
+  
+  /* Estilos para el contenedor derecho */
+  body > .right-container {
+    width: 70%;
+    height: 100vh; /* Altura completa de la ventana */
+    background-image: url('/asets/images/robot-humano.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    padding: 0.5rem;
+    left: 30%;
+    overflow-y: auto; /* Permite desplazamiento */
+  }
+  
+  .right-container > .main-container {
+    width: 98%;
+    height: max-content;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+  }
+  
+  /* Estilos para secciones */
+  .section-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .section-info > h2 {
+    font-size: 3rem;
+    color: var(--color-forth);
+    margin: 0;
+    border-bottom: 0.5rem solid var(--color-primary);
+    padding-bottom: 1rem;
+  }
+  
+  .section-info > p {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--color-secondary);
+    padding: 1rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+  }
+  
+  /* Estilos para tarjetas de proyectos */
+  .container-cards {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card-projects {
+    width: 25rem;
+    height: 15rem;
+    border-radius: 10px;
+    background-color: var(--color-tertiary);
+    margin: 1rem;
+    display: flex;
+  }
+  
+  .card-projects > .container-img-card {
+    width: 50%;
+    height: 100%;
+    border-radius: 7px 0 0 7px;
+  }
+  
+  .container-img-card > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px 0 0 7px;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .card-projects > .container-description-card {
+    width: 50%;
+    height: 100%;
+    border-radius: 0 7px 7px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  
+  .container-description-card > h3,
+  .container-description-card > p {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+  }
+  
+  .container-description-card > a {
+    display: flex;
+    overflow: hidden;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    width: 5rem;
+    padding: 0.5rem;
+    color: #fff;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .container-description-card > a:hover {
+    cursor: pointer;
+    background-color: #0026a0;
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para tarjetas de experiencia */
+  .container-experience {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .card-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 200px;
+  }
+  
+  .container-img-experience {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .container-img-experience img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-primary);
+  }
+  
+  .container-info-experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container-info-experience h3 {
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 1.5rem;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 0.5rem;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .percentage-text {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-tertiary);
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  /* Estilos para tarjetas de referencias */
+  .container-references {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .card-reference {
+    width: 16rem;
+    height: auto;
+    min-height: 15rem;
+    background-color: var(--color-primary);
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    color: var(--color-secondary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-reference h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .position {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #b3e0ff;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .icon {
+    font-size: 1.2rem;
+  }

@@ -160,3 +160,227 @@ footer > .navbar-social-networks {
     box-shadow: 0 0 5px rgba(0, 58, 248, 0.5);
     transform: scale(1.1);
 }
+
+/* Estilos responsivos para el contenedor izquierdo */
+@media screen and (max-width: 1200px) {
+    body > .left-container {
+      width: 35%;
+    }
+    
+    body > .right-container {
+      width: 65%;
+      left: 35%;
+    }
+    
+    .container-name-profile h2 {
+      font-size: 2.5rem;
+    }
+    
+    .navbar-profile > ul {
+      font-size: 1.8rem;
+      gap: 1.2rem;
+    }
+    
+    .bx {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    body > .left-container {
+      width: 40%;
+    }
+    
+    body > .right-container {
+      width: 60%;
+      left: 40%;
+    }
+    
+    .container-img-profile > img {
+      width: 70%;
+    }
+    
+    .container-name-profile h2 {
+      font-size: 2.2rem;
+    }
+    
+    .navbar-profile > ul {
+      font-size: 1.6rem;
+      gap: 1rem;
+    }
+    
+    header > .container-logo > img {
+      width: 35%;
+    }
+    
+    .bx {
+      font-size: 1.6rem;
+      padding: 0.4rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    body > .left-container {
+      width: 100%;
+      height: auto;
+      position: relative;
+      min-height: 100vh;
+    }
+    
+    body > .right-container {
+      width: 100%;
+      position: relative;
+      left: 0;
+      margin-top: 0;
+    }
+    
+    .container-img-profile > img {
+      width: 50%;
+      max-width: 200px;
+    }
+    
+    .container-name-profile h2 {
+      font-size: 2.5rem;
+    }
+    
+    .navbar-profile > ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 1.4rem;
+    }
+    
+    .navbar-profile > ul > li {
+      width: auto;
+    }
+    
+    header > .container-logo {
+      margin: 1.5rem 0;
+    }
+    
+    header > .container-logo > img {
+      width: 20%;
+      max-width: 100px;
+    }
+    
+    footer > .navbar-social-networks {
+      margin-bottom: 1rem;
+    }
+    
+    /* Añadir botón de menú hamburguesa para móviles */
+    .menu-toggle {
+      display: none;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background-color: var(--color-primary);
+      color: var(--color-secondary);
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem;
+      z-index: 1000;
+      cursor: pointer;
+    }
+    
+    .menu-icon {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    header > .container-img-profile {
+      margin-bottom: 0.5rem;
+    }
+    
+    .container-name-profile h2 {
+      font-size: 2rem;
+    }
+    
+    .navbar-profile > ul {
+      font-size: 1.2rem;
+    }
+    
+    .navbar-profile > ul > li > a {
+      padding: 0.4rem 0.8rem;
+    }
+    
+    header > .container-logo > img {
+      width: 25%;
+    }
+    
+    .bx {
+      font-size: 1.4rem;
+      padding: 0.3rem;
+    }
+    
+    .left-container > header {
+      margin: 0.5rem auto;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    .container-name-profile h2 {
+      font-size: 1.7rem;
+    }
+    
+    .navbar-profile > ul {
+      font-size: 1rem;
+    }
+    
+    .navbar-profile > ul > li > a {
+      padding: 0.3rem 0.6rem;
+    }
+    
+    .bx {
+      font-size: 1.2rem;
+    }
+    
+    /* Opción para menú completamente colapsable en móviles muy pequeños */
+    .collapsed-menu .navbar-profile > ul {
+      display: none;
+    }
+    
+    .collapsed-menu .navbar-profile.show > ul {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .collapsed-menu .menu-toggle {
+      display: block;
+    }
+  }
+  
+  /* Estilos adicionales para la opción de menú colapsable */
+  @media screen and (max-width: 768px) {
+    /* Añadir JavaScript para alternar estas clases */
+    .collapsed-menu .navbar-profile:not(.show) > ul {
+      display: none;
+    }
+    
+    .collapsed-menu .menu-toggle {
+      display: block;
+    }
+    
+    .collapsed-menu .navbar-profile.show > ul {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 999;
+      padding: 3rem 1rem 1rem;
+    }
+    
+    .collapsed-menu .navbar-profile.show > ul > li {
+      width: 80%;
+      margin: 0.3rem 0;
+    }
+  }

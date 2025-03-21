@@ -373,3 +373,178 @@
   .icon {
     font-size: 1.2rem;
   }
+
+  /* Estilos responsivos */
+@media screen and (max-width: 1200px) {
+  body > .right-container {
+    width: 100%;
+    left: 0;
+    padding: 0.3rem;
+  }
+  
+  .section-info > h2 {
+    font-size: 2.5rem;
+  }
+  
+  .section-info > p {
+    font-size: 1.7rem;
+  }
+  
+  .card-projects {
+    width: 22rem;
+    height: 14rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card-projects {
+    width: 20rem;
+    height: 13rem;
+  }
+  
+  .section-info > h2 {
+    font-size: 2.2rem;
+  }
+  
+  .section-info > p {
+    font-size: 1.5rem;
+  }
+  
+  .card-experience {
+    width: 180px;
+  }
+  
+  .container-img-experience img {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .right-container > .main-container {
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+  }
+  
+  .section-info {
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-info > h2 {
+    font-size: 2rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 0.3rem solid var(--color-primary);
+  }
+  
+  .section-info > p {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+  
+  .card-projects {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+  
+  .card-projects > .container-img-card,
+  .card-projects > .container-description-card {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  .card-projects > .container-img-card {
+    height: 10rem;
+    border-radius: 7px 7px 0 0;
+  }
+  
+  .container-img-card > img {
+    border-radius: 7px 7px 0 0;
+  }
+  
+  .container-references {
+    gap: 0.5rem;
+  }
+  
+  .card-reference {
+    width: 90%;
+    min-height: auto;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-info > h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section-info > p {
+    font-size: 1.1rem;
+  }
+  
+  .container-experience {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-experience {
+    width: 90%;
+    margin: 0.5rem 0;
+  }
+  
+  .container-img-experience img {
+    width: 6rem;
+    height: 6rem;
+  }
+  
+  .container-description-card > h3,
+  .container-description-card > p {
+    font-size: 1rem;
+  }
+  
+  .container-description-card > a {
+    font-size: 0.9rem;
+    width: 4.5rem;
+    padding: 0.4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-reference h3 {
+    font-size: 1.3rem;
+  }
+  
+  .position {
+    font-size: 1rem;
+  }
+  
+  .contact-item {
+    font-size: 0.9rem;
+  }
+  
+  .icon {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .section-info > h2 {
+    font-size: 1.5rem;
+  }
+  
+  .section-info > p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .card-projects {
+    margin: 0.5rem;
+  }
+  
+  .container-img-experience img {
+    width: 5rem;
+    height: 5rem;
+  }
+}

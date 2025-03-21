@@ -235,3 +235,38 @@ const projects = [
     loadSectionExperience();
     loadSectionReferences();
   });
+
+  // Código para activar el menú hamburguesa
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navbar = document.querySelector('.navbar-profile');
+  const body = document.body;
+
+  // Agregar botón de menú hamburguesa al DOM si no existe
+  if (!menuToggle) {
+    const toggleButton = document.createElement('button');
+    toggleButton.className = 'menu-toggle';
+    toggleButton.innerHTML = '<span class="menu-icon">☰</span>';
+    document.body.appendChild(toggleButton);
+  }
+
+  // Añadir clase para habilitar estilos de menú colapsable en móviles
+  if (window.innerWidth <= 768) {
+    body.classList.add('collapsed-menu');
+  }
+
+  // Evento para mostrar/ocultar menú
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    navbar.classList.toggle('show');
+  });
+
+  // Actualizar en cambio de tamaño de ventana
+  window.addEventListener('resize', function() {
+    if (window.innerWidth <= 768) {
+      body.classList.add('collapsed-menu');
+    } else {
+      body.classList.remove('collapsed-menu');
+      navbar.classList.remove('show');
+    }
+  });
+});
